@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 30px;
+            text-align: center;
+            color: white;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            background: #f8f9ff;
+        }
+        
+        nav a:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .content {
+            padding: 40px 30px;
+            color: #333;
+            line-height: 1.8;
+        }
+        
+        .welcome-box {
+            background: linear-gradient(135deg, #f8f9ff 0%, #e8ecff 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .welcome-box h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .info-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .info-card h3 {
+            color: #764ba2;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .content a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 15px;
+            background: #f8f9ff;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .content a:hover {
+            background: #667eea;
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            
+            nav {
+                flex-direction: column;
+            }
+            
+            nav a {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ Selamat Datang ✨</h1>
+            <p>Website Pribadi Saya</p>
+        </header>
+        
+        <nav>
+            <a href="home.html">🏠 Home</a>
+            <a href="profil.html">👤 Profil</a>
+            <a href="about.html">ℹ️ About</a>
+            <a href="galery.html">📸 Gallery</a>
+            <a href="kontak.html">📧 Kontak</a>
+        </nav>
+        
+        <div class="content">
+            <div class="welcome-box">
+                <h2>Assalammualaikum Wr. Wb. 🙏</h2>
+                <p>
+                    Apa kabar semua? Salam kenal, ini adalah website perdana saya! 
+                    Website ini berisi informasi tentang kegemaran dan hobi saya.
+                    Semoga website ini dapat menginspirasi Anda, terutama pada waktu liburan.
+                </p>
+            </div>
+            
+            <div class="info-card">
+                <h3>🌐 Link Berguna</h3>
+                <p>
+                    Kunjungi juga website favorit saya: 
+                    <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">Google</a>
+                </p>
+            </div>
+            
+            <div class="info-card">
+                <h3>💌 Hubungi Saya</h3>
+                <p>
+                    Silakan hubungi saya jika ada yang ingin didiskusikan:
+                    <a href="mailto:endar_nirmala@yahoo.com">📬 Kirim Email</a>
+                </p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 My Personal Website | Made with ❤️</p>
+        </footer>
+    </div>
+</body>
+</html>
